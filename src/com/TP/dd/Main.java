@@ -6,6 +6,16 @@ import android.view.Menu;
 
 public class Main extends Activity {
 
+	private final int CAMERA_WIDTH = 800;
+	private final int CAMERA_HEIGHT = 480;
+	private ResourcesManager resourcesManager;
+	private Camera camera;
+	private Scene splashScene;
+	private Scene mainScene;
+	
+    private BitmapTextureAtlas splashTextureAtlas;
+    private ITextureRegion splashTextureRegion;
+    private Sprite splash;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
